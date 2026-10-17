@@ -1,0 +1,18 @@
+@nsobid-D152076FB85E0B999DDEA822E27FC25BF95907D5
+
+@flag print_values
+@flag offset_shift 0x100
+
+// Desactive toute la console reseau de debug de NX Optimizer (UltraCam subsdk3)
+// pour qu'elle ne touche jamais nn::socket (sinon conflit avec l'Online Mod).
+@enabled
+00018DF0 1F2003D5
+0001D48C 00008052
+0001D490 C0035FD6
+0001A1F4 00008052
+0001A1F8 C0035FD6
+0001A4A4 00008052
+0001A4A8 C0035FD6
+0001A5CC 00008052
+0001A5D0 C0035FD6
+@stop
